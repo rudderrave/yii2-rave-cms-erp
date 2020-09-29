@@ -20,7 +20,7 @@ $this->title = 'Homepage';
 
     <div class="body-content">
 
-        <?php /* @var $post yeesoft\post\models\Post */ ?>
+        <?php /* @var $post ravesoft\post\models\Post */ ?>
         <?php foreach ($posts as $post) : ?>
             <?= $this->render('/items/post.php', ['post' => $post, 'page' => 'index']) ?>
         <?php endforeach; ?>

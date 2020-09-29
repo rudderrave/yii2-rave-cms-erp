@@ -1,6 +1,6 @@
 <?php
 /**
- * @link http://www.yee-soft.com/
+ * @link http://www.rave-soft.com/
  */
 
 namespace console\controllers;
@@ -92,7 +92,7 @@ class InitAdminController extends Controller
                 throw new Exception("The 'db' option must refer to the application component ID of a DB connection.");
             }
 
-            echo "Yee CMS Root User Init Tool\n";
+            echo "Rave CMS Root User Init Tool\n";
             if (isset($this->db->dsn)) {
                 echo "Database Connection: ".$this->db->dsn."\n\n";
             }

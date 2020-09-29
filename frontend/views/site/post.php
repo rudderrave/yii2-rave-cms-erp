@@ -1,10 +1,10 @@
 <?php
 /* @var $this yii\web\View */
 
-use yeesoft\comments\widgets\Comments;
-use yeesoft\post\models\Post;
+use ravesoft\comments\widgets\Comments;
+use ravesoft\post\models\Post;
 
-/* @var $post yeesoft\post\models\Post */
+/* @var $post ravesoft\post\models\Post */
 
 $this->title = $post->title;
 $this->params['breadcrumbs'][] = $post->title;

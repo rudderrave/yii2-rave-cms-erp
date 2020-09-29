@@ -11,7 +11,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
         'auth' => [
-            'class' => 'yeesoft\auth\AuthModule',
+            'class' => 'ravesoft\auth\AuthModule',
         ],
     ],
     'components' => [
@@ -21,17 +21,17 @@ return [
                 'theme' => 'readable', //cerulean, cosmo, default, flatly, readable, simplex, united
             ],
             'as seo' => [
-                'class' => 'yeesoft\seo\components\SeoViewBehavior',
+                'class' => 'ravesoft\seo\components\SeoViewBehavior',
             ]
         ],
         'seo' => [
-            'class' => 'yeesoft\seo\components\Seo',
+            'class' => 'ravesoft\seo\components\Seo',
         ],
         'request' => [
             'baseUrl' => '',
         ],
         'urlManager' => [
-            'class' => 'yeesoft\web\MultilingualUrlManager',
+            'class' => 'ravesoft\web\MultilingualUrlManager',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => array(

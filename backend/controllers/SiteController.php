@@ -2,7 +2,7 @@
 
 namespace backend\controllers;
 
-use yeesoft\controllers\admin\DashboardController;
+use ravesoft\controllers\admin\DashboardController;
 
 class SiteController extends DashboardController
 {

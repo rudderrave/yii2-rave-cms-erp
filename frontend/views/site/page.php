@@ -1,8 +1,8 @@
 <?php
 /* @var $this yii\web\View */
 
-use yeesoft\comments\widgets\Comments;
-use yeesoft\page\models\Page;
+use ravesoft\comments\widgets\Comments;
+use ravesoft\page\models\Page;
 use yii\helpers\Html;
 
 $this->title = $page->title;

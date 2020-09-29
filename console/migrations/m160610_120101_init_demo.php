@@ -29,10 +29,10 @@ class m160610_120101_init_demo extends Migration
         $this->insert('{{%post_category}}', ['id' => '2', 'slug' => 'first-category', 'created_by' => 1, 'updated_by' => 1, 'visible' => 1, 'left_border' => 42107523, 'right_border' => 84215044, 'depth' => 1, 'created_at' => time(), 'updated_at' => time()]);
         $this->insert('{{%post_category_lang}}', ['post_category_id' => '1', 'title' => 'First Category', 'language' => 'en-US']);
 
-        $this->insert('{{%post_tag}}', ['id' => '1', 'slug' => 'yee-cms', 'created_by' => 1, 'updated_by' => 1, 'created_at' => time(), 'updated_at' => time()]);
+        $this->insert('{{%post_tag}}', ['id' => '1', 'slug' => 'rave-cms', 'created_by' => 1, 'updated_by' => 1, 'created_at' => time(), 'updated_at' => time()]);
         $this->insert('{{%post_tag}}', ['id' => '2', 'slug' => 'yii2', 'created_by' => 1, 'updated_by' => 1, 'created_at' => time(), 'updated_at' => time()]);
 
-        $this->insert('{{%post_tag_lang}}', ['post_tag_id' => '1', 'title' => 'YeeCMS', 'language' => 'en-US']);
+        $this->insert('{{%post_tag_lang}}', ['post_tag_id' => '1', 'title' => 'RaveCMS', 'language' => 'en-US']);
         $this->insert('{{%post_tag_lang}}', ['post_tag_id' => '2', 'title' => 'Yii2', 'language' => 'en-US']);
 
         $this->insert('{{%post}}', ['id' => '1', 'slug' => 'integer-id-ullamcorper-nibh', 'category_id' => '1', 'created_by' => 1, 'updated_by' => 1, 'status' => 1, 'comment_status' => 1,
@@ -53,7 +53,7 @@ class m160610_120101_init_demo extends Migration
         $this->insert('{{%post_tag_post}}', ['post_id' => 1, 'tag_id' => 2]);
         $this->insert('{{%post_tag_post}}', ['post_id' => 2, 'tag_id' => 1]);
         
-        $this->insert('{{%seo}}', ['url' => '/en', 'title' => 'Homepage', 'author' => 'Site Owner', 'keywords' => 'yii2, cms, yeecms', 'description' => 'Seo meta description', 'index' => 1, 'follow' => 1, 'created_by' => 1, 'updated_by' => 1, 'created_at' => '1452544164', 'updated_at' => '1452545049']);
+        $this->insert('{{%seo}}', ['url' => '/en', 'title' => 'Homepage', 'author' => 'Site Owner', 'keywords' => 'yii2, cms, ravecms', 'description' => 'Seo meta description', 'index' => 1, 'follow' => 1, 'created_by' => 1, 'updated_by' => 1, 'created_at' => '1452544164', 'updated_at' => '1452545049']);
 
     }
 

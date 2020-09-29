@@ -2,16 +2,16 @@
 
 namespace frontend\controllers;
 
-use yeesoft\post\models\Post;
+use ravesoft\post\models\Post;
 use Yii;
-use yeesoft\post\models\Category;
+use ravesoft\post\models\Category;
 use yii\data\Pagination;
 use yii\web\NotFoundHttpException;
 
 /**
  * Site controller
  */
-class CategoryController extends \yeesoft\controllers\BaseController
+class CategoryController extends \ravesoft\controllers\BaseController
 {
     public $freeAccess = true;
 

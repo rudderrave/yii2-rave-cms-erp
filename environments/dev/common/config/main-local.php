@@ -20,8 +20,8 @@ return [
                 'port' => '587',
                 'encryption' => 'tls',
             ],
-            'htmlLayout' => '@vendor/yeesoft/yii2-yee-auth/views/mail/layouts/html',
-            'textLayout' => '@vendor/yeesoft/yii2-yee-auth/views/mail/layouts/text',
+            'htmlLayout' => '@vendor/ravesoft/yii2-rave-auth/views/mail/layouts/html',
+            'textLayout' => '@vendor/ravesoft/yii2-rave-auth/views/mail/layouts/text',
         ],
     ],
 ];

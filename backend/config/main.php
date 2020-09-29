@@ -14,19 +14,19 @@ return [
     'bootstrap' => ['log'],
     'modules' => [
         'settings' => [
-            'class' => 'yeesoft\settings\SettingsModule',
+            'class' => 'ravesoft\settings\SettingsModule',
         ],
         'menu' => [
-            'class' => 'yeesoft\menu\MenuModule',
+            'class' => 'ravesoft\menu\MenuModule',
         ],
         'translation' => [
-            'class' => 'yeesoft\translation\TranslationModule',
+            'class' => 'ravesoft\translation\TranslationModule',
         ],
         'user' => [
-            'class' => 'yeesoft\user\UserModule',
+            'class' => 'ravesoft\user\UserModule',
         ],
         'media' => [
-            'class' => 'yeesoft\media\MediaModule',
+            'class' => 'ravesoft\media\MediaModule',
             'routes' => [
                 'baseUrl' => '', // Base absolute path to web directory
                 'basePath' => '@frontend/web', // Base web directory url
@@ -34,16 +34,16 @@ return [
             ],
         ],
         'post' => [
-            'class' => 'yeesoft\post\PostModule',
+            'class' => 'ravesoft\post\PostModule',
         ],
         'page' => [
-            'class' => 'yeesoft\page\PageModule',
+            'class' => 'ravesoft\page\PageModule',
         ],
         'seo' => [
-            'class' => 'yeesoft\seo\SeoModule',
+            'class' => 'ravesoft\seo\SeoModule',
         ],
         'comment' => [
-            'class' => 'yeesoft\comment\CommentModule',
+            'class' => 'ravesoft\comment\CommentModule',
         ],
     ],
     'components' => [
@@ -53,13 +53,13 @@ return [
         'assetManager' => [
             'bundles' => [
                 'yii\bootstrap\BootstrapAsset' => [
-                    'sourcePath' => '@yeesoft/yii2-yee-core/assets/theme/bootswatch/custom',
+                    'sourcePath' => '@ravesoft/yii2-rave-core/assets/theme/bootswatch/custom',
                     'css' => ['bootstrap.css']
                 ],
             ],
         ],
         'urlManager' => [
-            'class' => 'yeesoft\web\MultilingualUrlManager',
+            'class' => 'ravesoft\web\MultilingualUrlManager',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'multilingualRules' => false,
@@ -69,7 +69,7 @@ return [
                 //'<controller:(test)>/<id:\d+>' => '<controller>/view',
                 //'<controller:(test)>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 //'<controller:(test)>/<action:\w+>' => '<controller>/<action>',
-                //yee cms and other modules routes
+                //rave cms and other modules routes
                 '<module:\w+>/' => '<module>/default/index',
                 '<module:\w+>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
                 '<module:\w+>/<action:(create)>' => '<module>/default/<action>',

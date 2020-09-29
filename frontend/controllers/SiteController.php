@@ -5,15 +5,15 @@ namespace frontend\controllers;
 use frontend\actions\PageAction;
 use frontend\actions\PostAction;
 use frontend\models\ContactForm;
-use yeesoft\page\models\Page;
-use yeesoft\post\models\Post;
+use ravesoft\page\models\Page;
+use ravesoft\post\models\Post;
 use Yii;
 use yii\data\Pagination;
 
 /**
  * Site controller
  */
-class SiteController extends \yeesoft\controllers\BaseController
+class SiteController extends \ravesoft\controllers\BaseController
 {
     public $freeAccess = true;
 

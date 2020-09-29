@@ -1,33 +1,33 @@
 <?php
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
-    'bootstrap' => ['comments', 'yee'],
+    'bootstrap' => ['comments', 'rave'],
     'language' => 'en-US',
     'sourceLanguage' => 'en-US',
     'components' => [
-        'yee' => [
-            'class' => 'yeesoft\Yee',
+        'rave' => [
+            'class' => 'ravesoft\Rave',
         ],
         'settings' => [
-            'class' => 'yeesoft\components\Settings'
+            'class' => 'ravesoft\components\Settings'
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'class' => 'yeesoft\components\User',
+            'class' => 'ravesoft\components\User',
             'on afterLogin' => function ($event) {
-                \yeesoft\models\UserVisitLog::newVisitor($event->identity->id);
+                \ravesoft\models\UserVisitLog::newVisitor($event->identity->id);
             }
         ],
     ],
     'modules' => [
         'comments' => [
-            'class' => 'yeesoft\comments\Comments',
-            'userModel' => 'yeesoft\models\User',
+            'class' => 'ravesoft\comments\Comments',
+            'userModel' => 'ravesoft\models\User',
             'userAvatar' => function ($user_id) {
-                $user = yeesoft\models\User::findIdentity((int)$user_id);
-                if ($user instanceof yeesoft\models\User) {
+                $user = ravesoft\models\User::findIdentity((int)$user_id);
+                if ($user instanceof ravesoft\models\User) {
                     return $user->getAvatar();
                 }
                 return false;

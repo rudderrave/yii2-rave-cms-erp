@@ -3,7 +3,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 
-/* @var $post yeesoft\post\models\Post */
+/* @var $post ravesoft\post\models\Post */
 
 $page = (isset($page)) ? $page : 'post';
 ?>
@@ -19,14 +19,14 @@ $page = (isset($page)) ? $page : 'post';
     <div class="clearfix" style="margin-bottom: 10px;">
         <div class="pull-left">
             <?php if ($post->category): ?>
-                <b><?= Yii::t('yee/post', 'Posted in') ?></b>
+                <b><?= Yii::t('rave/post', 'Posted in') ?></b>
                 <a href="<?= Url::to(['/category/index', 'slug' => $post->category->slug]) ?>">"<?= $post->category->title ?>"</a>
             <?php endif; ?>
         </div>
         <div class="pull-right">
             <?php $tags = $post->tags; ?>
             <?php if (!empty($tags)): ?>
-                <b><?= Yii::t('yee/post', 'Tags') ?>:</b>
+                <b><?= Yii::t('rave/post', 'Tags') ?>:</b>
                 <?php foreach ($tags as $tag): ?>
                     <?= Html::a('#' . $tag->title, ['/tag/index', 'slug' => $tag->slug], ['class' => 'label label-primary']) ?>
                 <?php endforeach; ?>
@@ -34,7 +34,7 @@ $page = (isset($page)) ? $page : 'post';
         </div>
     </div>
 
-    <span class="pull-right"><?= Yii::t('yee', 'Published') ?> by <b><?= $post->author->username ?></b> on <b><?= $post->publishedDate ?></b></span>
+    <span class="pull-right"><?= Yii::t('rave', 'Published') ?> by <b><?= $post->author->username ?></b> on <b><?= $post->publishedDate ?></b></span>
 
 </div>
 

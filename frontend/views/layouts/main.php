@@ -5,14 +5,14 @@
 use common\widgets\Alert;
 use frontend\assets\AppAsset;
 use frontend\assets\ThemeAsset;
-use yeesoft\models\Menu;
-use yeesoft\widgets\LanguageSelector;
-use yeesoft\widgets\Nav as Navigation;
+use ravesoft\models\Menu;
+use ravesoft\widgets\LanguageSelector;
+use ravesoft\widgets\Nav as Navigation;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use yeesoft\comment\widgets\RecentComments;
+use ravesoft\comment\widgets\RecentComments;
 
 Yii::$app->assetManager->forceCopy = true;
 AppAsset::register($this);
@@ -34,7 +34,7 @@ ThemeAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->settings->get('general.title', 'Yee Site', Yii::$app->language),
+        'brandLabel' => Yii::$app->settings->get('general.title', 'Rave Site', Yii::$app->language),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -42,8 +42,8 @@ ThemeAsset::register($this);
     ]);
     $menuItems = Menu::getMenuItems('main-menu');
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => Yii::t('yee/auth', 'Signup'), 'url' => \yii\helpers\Url::to(['/auth/default/signup'])];
-        $menuItems[] = ['label' => Yii::t('yee/auth', 'Login'), 'url' => ['/auth/default/login']];
+        $menuItems[] = ['label' => Yii::t('rave/auth', 'Signup'), 'url' => \yii\helpers\Url::to(['/auth/default/signup'])];
+        $menuItems[] = ['label' => Yii::t('rave/auth', 'Login'), 'url' => ['/auth/default/login']];
     } else {
         $menuItems[] = [
             'label' => Yii::$app->user->identity->username,
@@ -51,7 +51,7 @@ ThemeAsset::register($this);
         ];
 
         $menuItems[] = [
-            'label' => Yii::t('yee/auth', 'Logout'),
+            'label' => Yii::t('rave/auth', 'Logout'),
             'url' => ['/auth/default/logout', 'language' => false],
             'linkOptions' => ['data-method' => 'post']
         ];
@@ -105,9 +105,9 @@ ThemeAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->settings->get('general.title', 'Yee Site', Yii::$app->language)) ?> <?= date('Y') ?></p>
+        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->settings->get('general.title', 'Rave Site', Yii::$app->language)) ?> <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?>, <?= yeesoft\Yee::powered() ?></p>
+        <p class="pull-right"><?= Yii::powered() ?>, <?= ravesoft\Rave::powered() ?></p>
     </div>
 </footer>
 

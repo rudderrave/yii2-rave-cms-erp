@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="body-content">
         <h2><?= $category->title ?></h2>
 
-        <?php /* @var $post yeesoft\post\models\Post */ ?>
+        <?php /* @var $post ravesoft\post\models\Post */ ?>
         <?php foreach ($posts as $post) : ?>
             <?= $this->render('/items/post.php', ['post' => $post, 'page' => 'category']) ?>
         <?php endforeach; ?>

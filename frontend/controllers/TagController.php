@@ -2,8 +2,8 @@
 
 namespace frontend\controllers;
 
-use yeesoft\post\models\Post;
-use yeesoft\post\models\Tag;
+use ravesoft\post\models\Post;
+use ravesoft\post\models\Tag;
 use Yii;
 use yii\data\Pagination;
 use yii\web\NotFoundHttpException;
@@ -11,7 +11,7 @@ use yii\web\NotFoundHttpException;
 /**
  * Site controller
  */
-class TagController extends \yeesoft\controllers\BaseController
+class TagController extends \ravesoft\controllers\BaseController
 {
     public $freeAccess = true;
 
