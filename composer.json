@@ -1,0 +1,47 @@
+{
+  "name": "rudderrave/yii2-rave-cms-erp",
+  "description": "Rave CMS&ERP Based on Yii 2 Advanced Project Template",
+  "type": "project",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Rave",
+      "email": "rudder.rave@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.6",
+    "yiisoft/yii2-bootstrap": "~2.0.6",
+    "yiisoft/yii2-swiftmailer": "~2.0.6",
+    "rudderrave/yii2-rave-core-rest": "dev-master",
+    "rudderrave/yii2-rave-auth": "dev-master",
+    "rudderrave/yii2-rave-user": "dev-master",
+    "rudderrave/yii2-rave-settings": "dev-master",
+    "rudderrave/yii2-rave-menu": "dev-master",
+    "rudderrave/yii2-rave-translation": "dev-master",
+    "rudderrave/yii2-rave-post": "dev-master",
+    "rudderrave/yii2-rave-media": "dev-master",
+    "rudderrave/yii2-rave-page": "dev-master",
+    "rudderrave/yii2-rave-seo": "dev-master",
+    "rudderrave/yii2-comments": "dev-master",
+    "rudderrave/yii2-rave-comment": "dev-master"
+  },
+  "require-dev": {
+    "yiisoft/yii2-codeception": "~2.0.5",
+    "yiisoft/yii2-debug": "~2.0.9",
+    "yiisoft/yii2-gii": "~2.0.5",
+    "yiisoft/yii2-faker": "~2.0.3"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
