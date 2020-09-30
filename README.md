@@ -15,8 +15,9 @@ Installation
 
     ```bash
     cd /var/www/
-    composer global require "fxp/composer-asset-plugin:^1.2.0"
-    composer create-project --prefer-dist --stability=dev ravesoft/yii2-rave-cms-erp mysite.com 
+    php composer.phar global require "fxp/composer-asset-plugin:^1.2.0"
+    php composer.phar create-project --prefer-dist --stability=dev ravesoft/yii2-rave-cms-erp mysite.com 
+    php composer.phar create-project --prefer-dist ravesoft/yii2-rave-cms-erp mysite.com 
     ```
 
   2. Initialize the installed application
